@@ -1,0 +1,276 @@
+
+@import url(./fonts/WebFonts/css/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+@font-face{
+    font-family: iranyekan;
+    font-weight: normal;
+    src: url(./Assets/fonts/WebFonts/fonts/ttf/IRANYekanWebRegular.ttf)format("ttf");
+}
+* {
+	font-family: "iranyekan",sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    list-style: none;
+    text-decoration: none !important;
+}
+h1, h2, h3, h4, h5, h6,input, textarea {
+	font-family: iranyekan !important;
+}
+h1 {
+	font-weight: bold;
+}
+a{
+    /* text-decoration: ; */
+    color: inherit;
+}
+/* menu */
+
+.btn-start a{
+    padding: .7rem 3rem;
+    background-color: #008060;
+    width: 100%;
+    color: white;
+   display: block;
+   border-radius: 5px;
+    transition: .3s ease-in;
+}
+.btn-start a:hover{
+    background-color: #004c3f;
+}
+
+
+.des-title{
+    color: #6b7177;
+    font-size: .9rem;
+    line-height: 1.6rem;
+}
+/* .category{
+    width: 100%;
+} */
+.category a{
+    font-size: .9rem;
+    color: #6b7177;
+}
+.category a:hover{
+    color: black !important;
+}
+.category a.active{
+    color: blackndn;
+}
+#dropdown-category{
+    position: absolute;
+    top:-180% ;
+    display: none;
+    z-index: 1000;
+    transition: .3s ease;
+}
+#dropdown-category.active{
+    display: block;
+    top: 100%;
+}
+.cate-g{
+    color: #008060;
+    font-weight: bold;
+    font-size: .9rem;
+}
+.date{
+    color: #6b7177;
+    font-size: .8rem;
+}
+.date:hover{
+    color: #6b7177 !important;
+}
+.date span{
+    color: #008060;
+}
+#blogs img:hover{
+    transition: .3s ease;
+    transform: scale(1.1);
+}
+#blogs .title-blog{
+    font-size: 1.3rem;
+}
+#blogs .title-blog:hover{
+    color: #212326 !important;
+    text-decoration: underline !important;
+}
+
+.search-icon{
+    top: 0;
+    right: 4%;
+    margin-top: 2.4%;
+    font-size: 1.1rem;
+    color: #008060;
+    cursor: pointer;
+}
+#bottom-blogs input{
+    font-size: .8rem;
+    border-radius: 20px;
+    border:1px solid #6b7177 ;
+    padding:.7rem 2.8rem ;
+}
+#bottom-blogs input:focus{
+    border: none;
+    outline:#008060 solid 2px;
+}
+#pagination{
+    color: #008060;
+    padding: 2.5rem 0 !important;
+}
+#pagination i{
+    font-size: .6rem;
+}
+#pagination a.active{
+    color: #6b7177;
+}
+
+#submenu-quickguid,
+#submenu-popular,
+#submenu-latest{
+    display: none;
+}
+
+#submenu-quickguid.active,
+#submenu-popular.active,
+#submenu-latest.active{
+    display: block;
+}
+
+#submenu-quickguid a,
+#submenu-popular a,
+#submenu-latest a{
+    font-size:1rem;
+    color: black;
+}
+#submenu-quickguid a:hover .main-title,
+#submenu-popular a:hover,
+#submenu-latest a:hover {
+    text-decoration: underline !important;
+
+}
+#submenu-quickguid .sub-title{
+    font-size:1rem;
+    font-weight: normal;
+    color:#004c3f;
+}
+
+#submenu-popular #more-blog{
+    color: #008060;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none !important;
+}
+#submenu-popular #more-blog i{
+    font-size: .9rem;
+    transition: .2s ease-in;
+}
+#submenu-popular #more-blog:hover i{
+    transform: translateX(-2px);
+}
+
+#main-content #start-ad input{
+    padding: .7rem;
+    border-radius: 5px;
+    font-size: .9rem;
+    color: #6b7177;
+    box-shadow: none !important;
+    outline: none !important;
+    border:1px solid #787878;
+}
+#main-content #start-ad input:focus{
+    border:2px solid #004c3f;
+}
+
+
+#menu,#top{
+    background-color: #004c3f;
+    color: #cacaca;
+}
+.menu-item div,
+.menu-item i
+{
+    color:#cacaca;
+}
+.sub-menu div{
+    color: black;
+}
+
+@media only screen and (min-width:750px){
+    #popular,
+    #quick-guid,
+    #latest{
+        border: none !important;
+    }
+    #start-email{
+        width: 50% !important;
+        padding:0 !important;
+    }
+    #start-email input.w-100{
+        width: auto !important;
+    }
+    #start-email .btn-start{
+        width: auto !important;
+    }
+    
+}
+
+
+@media screen and (min-width:750px) {
+
+   .des-title{
+       text-align: right !important;
+   }
+   .btn-start{
+       /* width: 50% !important; */
+   }
+   #dropdown-category{
+       position: static;
+       display: block !important;
+   }
+   .search-icon{
+        top: 0;
+        margin-top: 1%;
+        right: 2.5%;
+   }
+}
+
+
+
+
+
+/* --------------------- */
+#category #top-header{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding:5rem;
+    text-align:center;
+}
+
+
+#side-bar input{
+    font-size: .8rem;
+    border-radius: 20px;
+    border:1px solid #6b7177 ;
+    padding:.7rem 2.8rem ;
+    outline: none !important;
+}
+#side-bar input:focus{
+    border:2px solid #008060;
+}
+#side-bar .search-icon{
+    top: 0;
+    margin-top: 2.5%;
+    right: 4.5%;
+}
+
+.join-ad .start-email input{
+    padding: .7rem;
+    border-radius: 5px !important;
+    font-size: .9rem;
+    color: #6b7177;
+    box-shadow: none !important;
+    border:1px solid #787878;
+}

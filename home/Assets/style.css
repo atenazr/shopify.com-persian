@@ -1,0 +1,246 @@
+
+@import url(./fonts/WebFonts/css/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+@font-face{
+    font-family: iranyekan;
+    font-weight: normal;
+    src: url(./Assets/fonts/WebFonts/fonts/ttf/IRANYekanWebRegular.ttf)format("ttf");
+}
+* {
+	font-family: "iranyekan",sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    list-style: none;
+    text-decoration: none !important;
+}
+h1, h2, h3, h4, h5, h6,input, textarea {
+	font-family: iranyekan !important;
+}
+h1 {
+	font-weight: bold;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color:initial;
+}
+/* menu */
+#top{
+    background-color: #fbf7ed;
+}
+#menu{
+    position: fixed;
+    z-index: 10001;
+    background-color:#fbf7ed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+#menu-bar{
+    height: 100vh;
+    width: 90%;
+    background-color: white;
+    top: 0;
+    left:-110%;
+    margin-top:0;
+    transition: .4s ease;
+    z-index: 1000;
+    padding: 1rem 2.1rem;
+}
+#menu-bar.active{
+    left: 0;
+}
+#menu-bar i{
+    cursor: pointer;
+}
+#content i{
+    font-size: .9rem;
+    color: #787878;
+}
+#menu-bar .menu-item{
+    cursor: pointer;
+}
+#menu-bar .sub-menu{
+    display: none;
+    transition: 1s ease-in;
+}
+#menu-bar .sub-menu.active{
+    display: block;
+}
+.menu-item div{
+    color: #212b36;
+    font-size: 1.15rem;
+}
+.btn-start a{
+    padding: 1rem 3rem;
+    background-color: #008060;
+    width: 100%;
+    color: white;
+   display: block;
+   border-radius: 5px;
+    transition: .3s ease-in;
+}
+.btn-start a:hover{
+    background-color: #004c3f;
+}
+
+/* header */
+#header{
+    padding-top: 4rem !important;
+}
+#header h2{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #004c3f;
+    font-weight: 750;
+}
+
+.des-title{
+    color: #6b7177;
+    font-size: .9rem;
+    line-height: 1.6rem;
+}
+#header .des-email{
+    color: #6b7177;
+    font-size: .75rem;
+}
+#header input{
+    padding: 1rem;
+    box-shadow: none !important;
+    outline:none !important;
+    border-radius: 5px;
+    font-size: .85rem;
+    color: #787878;
+}
+#header input:focus{
+    border-color: #004c3f !important;
+}
+
+
+
+
+#take i{
+    font-size: 1.8rem;
+}
+#take p{
+    font-size: .8rem;
+    line-height: 1.8rem;
+}
+
+#wherever .explore{
+    font-size: 1rem;
+    color: #008060;
+    font-weight: bold;
+}
+#wherever .explore:hover i{
+    transform: translateX(-5px);
+    transition: transform .5s ease;
+}
+
+
+#back-top a{
+    color: #008060;
+    transition: .8s ease-in-out;
+}
+
+#back-top a:hover i{
+    font-size: 1.1rem;
+    transform:translateY(-5px);
+}
+
+
+footer a.footer-link{
+    color: #787878;
+    text-align: right;
+    width: 100%;
+    transition: .3s ease-in-out;
+    padding: .2rem 0;
+}
+
+footer a.footer-link:hover{
+    color: white;
+}
+
+footer .social{
+    text-align: center;
+    font-size: .9rem;
+    color: #004c3f;
+    background-color: white;
+    padding: .2rem .5rem;
+    margin: 1rem .6rem;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width:750px) {
+
+    #brand{
+        flex-grow: 0 !important;
+    }
+    #menu-bar{
+        position: static !important;
+        background-color: inherit;
+        height: auto;
+        width: auto;
+        flex-grow: 1;
+    }
+    #menu-bar #content{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+    }
+    #menu-bar .menu-item{
+        position: relative;
+    } 
+    #menu-bar .sub-menu{
+        position: absolute;
+        display: none;
+        background-color: white;
+        width: 200%;
+        border: 1px solid #c7c5c5;
+        box-shadow: 1px 1px 8px #c7c5c5;
+        padding: 1rem .1rem !important;
+    }
+    #menu-bar .sub-menu div div:hover{
+        border-right: 2px solid #004c3f;
+        background-color: #c7c5c5;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- */
+/* email-modal */
+#email-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #212326;
+}
+#email-modal input{
+    font-size: .8rem;
+    color: #6b7177;
+}
+#email-modal input:focus{
+    outline: 3px solid #008060 !important;
+    box-shadow: none !important;
+    border: none;
+}
